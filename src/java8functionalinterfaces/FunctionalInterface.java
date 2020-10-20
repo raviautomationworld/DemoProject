@@ -48,6 +48,12 @@ public class FunctionalInterface {
 		
 		cFunc.accept("Sudha Rani");
 		
+		Function<Integer, Integer> funcnew = (x)-> x * 5;
+
+		int resultnew = func1.andThen(funcnew).apply("Ravi");
+		
+		System.out.println("Just for git commit :::: "+resultnew);
+		
 	
 		
 
